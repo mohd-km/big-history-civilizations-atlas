@@ -185,7 +185,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 3_800_000_000,
     displayDate: '3.8 - 3.7 Gya',
     domain: 'Paleobiology',
-    oneLiner: 'Earliest carbon-12 life signatures; anaerobic prokaryotes synthesize ATP (the cell's energy molecule) via proton gradients.',
+    oneLiner: 'Earliest carbon-12 life signatures; anaerobic prokaryotes synthesize ATP (the cell energy molecule) via proton gradients.',
     metrics: [
       { label: 'Molecular Clock LUCA', value: '~4.2 Gya' },
       { label: 'Metabolism', value: 'Chemoautotrophic' },

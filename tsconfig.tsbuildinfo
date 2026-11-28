@@ -1,1 +1,0 @@
-{"root":["./src/App.tsx","./src/main.tsx","./src/components/CivilizationComparator.tsx","./src/components/LogTimelineZoom.tsx","./src/data/civilizationData.ts","./src/data/timelineData.ts","./src/utils/exportData.ts"],"version":"5.9.3"}

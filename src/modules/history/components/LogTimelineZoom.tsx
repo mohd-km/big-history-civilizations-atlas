@@ -298,7 +298,7 @@ export const LogTimelineZoom: React.FC = () => {
 
             {/* Track B: Scientific-Breakthrough Milestones */}
             <text x={PAD_X} y={176} fill="#93c5fd" fontSize="11" fontFamily="JetBrains Mono, monospace">
-              TRACK B: SCIENTIFIC BREAKTHROUGHS — EPISTEME &amp; TECHNE ({visibleScience.length} visible)
+              TRACK B: SCIENCE · THEORY (EPISTEME) &amp; TOOLS (TECHNE) ({visibleScience.length} visible)
             </text>
             <line x1={PAD_X} y1={208} x2={SVG_W - PAD_X} y2={208} stroke="#334155" strokeWidth="2" />
 
@@ -485,7 +485,7 @@ export const LogTimelineZoom: React.FC = () => {
                 }}
               >
                 <span style={{ fontSize: '13px' }}>
-                  <strong>{sc.figure}</strong> &mdash; {sc.breakthrough}
+                  <strong>{sc.figure}</strong>: {sc.breakthrough}
                 </span>
                 <span className="mono" style={{ fontSize: '12px', color: 'var(--ink-secondary)', whiteSpace: 'nowrap' }}>
                   {sc.yearLabel}

@@ -104,7 +104,7 @@ export function exportAtlasJSON(params: SimulationParams, sim: SimulationResult)
 
 export function exportAtlasMarkdown(params: SimulationParams, sim: SimulationResult) {
   const lines: string[] = [
-    '# Civilization & Futures Atlas — History Snapshot',
+    '# Big History & Civilizations Atlas: History Snapshot',
     '',
     'Author: Mohammed KM',
     `Exported: ${new Date().toISOString()}`,

@@ -393,10 +393,10 @@ export const CivilizationComparator: React.FC<Props> = ({
         {/* Visual 2: 50-Generation Systems-Loop Trajectory */}
         <div className="card-white">
           <h3 style={{ fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Activity size={17} color="var(--accent)" /> Reinforcing vs. Balancing Loop Trajectory
+            <Activity size={17} color="var(--accent)" /> Growth loops vs limiting loops, over time
           </h3>
           <p style={{ margin: '4px 0 12px', color: 'var(--ink-secondary)', fontSize: '13.5px' }}>
-            50 generations with a shock pulse at gen 18–34; solid blue is population.
+            50 generations, with a shock between generations 18 and 34. Solid blue is population.
           </p>
 
           <svg
@@ -478,10 +478,10 @@ export const CivilizationComparator: React.FC<Props> = ({
         >
           <div>
             <h3 style={{ fontSize: '19px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <ArrowLeftRight size={17} color="var(--accent)" /> Side-by-Side Regime Comparator
+              <ArrowLeftRight size={17} color="var(--accent)" /> Compare two societies side by side
             </h3>
             <p style={{ margin: '4px 0 0', color: 'var(--ink-secondary)', fontSize: '14px' }}>
-              Contrast energy capture, openness, and collapse drivers across any two historical civilizations.
+              Pick any two societies from history and compare their energy use, their openness and what brought them down.
             </p>
           </div>
 
@@ -571,8 +571,8 @@ export const CivilizationComparator: React.FC<Props> = ({
               Loop Dominance: R &gt; B =&gt; Exponential Growth | R ~ B =&gt; Steady State | B &gt; R =&gt; Decline / Collapse
             </div>
             <p style={{ margin: 0 }}>
-              Reinforcing loops amplify population and surplus; balancing loops impose resource, coupling and complexity ceilings.
-              Openness raises adaptive recovery after shocks. Indices are modelled, not measured.
+              Reinforcing loops make population and surplus feed on themselves. Balancing loops push back through limits on resources, supply links and the cost of complexity.
+              Openness helps a society recover after a shock. Every score here comes from this model, not from measurement.
             </p>
           </div>
         </details>

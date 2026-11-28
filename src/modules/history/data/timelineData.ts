@@ -66,7 +66,7 @@ export const EPOCHS: EpochDefinition[] = [
     endYa: 4_540_000_000,
     logMin: Math.log10(4_540_000_000),
     logMax: Math.log10(13_800_000_000),
-    summary: 'Spacetime expansion, primordial H/He synthesis, Population III stars, and Milky Way assembly.',
+    summary: 'Space expands, the first hydrogen and helium form, the first giant stars (Population III) burn out, and the Milky Way comes together.',
     keyMetric: '75% H / 25% He primordial mass ratio',
     shade: '#f5f2eb',
   },
@@ -78,7 +78,7 @@ export const EPOCHS: EpochDefinition[] = [
     endYa: 538_800_000,
     logMin: Math.log10(538_800_000),
     logMax: Math.log10(4_540_000_000),
-    summary: 'Planetary accretion, liquid oceans, LUCA (last universal common ancestor) and the origin of life, Great Oxidation, and mitochondrial endosymbiosis.',
+    summary: 'Earth forms and cools into oceans. Life starts from one shared ancestor (LUCA, the last universal common ancestor), oxygen floods the air (the Great Oxidation), and one cell takes in another to make the first cell with mitochondria.',
     keyMetric: '100,000x ATP (cell energy) per gene via mitochondria',
     shade: '#f7f5f0',
   },
@@ -90,7 +90,7 @@ export const EPOCHS: EpochDefinition[] = [
     endYa: 12_000,
     logMin: Math.log10(12_000),
     logMax: Math.log10(538_800_000),
-    summary: 'Cambrian body plans, mass extinctions, bipedal hominins, fire-driven encephalization, and symbolic syntax.',
+    summary: 'Animal body plans appear in the Cambrian and mass extinctions reset life. Our ancestors start walking upright, fire and cooking help brains grow (encephalisation), and language with symbols arrives.',
     keyMetric: '400 cc to 1,350 cc hominin brain expansion',
     shade: '#fafaf9',
   },
@@ -102,7 +102,7 @@ export const EPOCHS: EpochDefinition[] = [
     endYa: 276, // 1750 CE
     logMin: Math.log10(276),
     logMax: Math.log10(12_000),
-    summary: 'Holocene grain domestication, river-valley urban states, writing, classical inquiry, and global trade.',
+    summary: 'After the Ice Age (in the Holocene), people farm grain and build river-valley cities. Writing, early philosophy and long-distance trade follow.',
     keyMetric: '10x to 100x population density jump (>50/km2)',
     shade: '#f5f5f4',
   },
@@ -114,7 +114,7 @@ export const EPOCHS: EpochDefinition[] = [
     endYa: 76, // 1950 CE
     logMin: Math.log10(76),
     logMax: Math.log10(276),
-    summary: 'Fossil-fuel thermodynamics, electromagnetism, assembly-line mass production, and state-funded Big Science.',
+    summary: 'Coal and steam turn heat into work (thermodynamics), and electricity and magnetism are put to use. Then come the assembly line and government-funded Big Science.',
     keyMetric: '75,000 to 110,000 kcal/day/capita energy capture',
     shade: '#f8f4f0',
   },
@@ -126,7 +126,7 @@ export const EPOCHS: EpochDefinition[] = [
     endYa: 1, // Present
     logMin: 0,
     logMax: Math.log10(76),
-    summary: 'Molecular genetics, ARPANET, algorithmic markets, programmable CRISPR editing, and planetary forcing.',
+    summary: 'DNA is decoded, ARPANET links computers, markets run on algorithms and CRISPR edits genes. Humans now push the climate of the whole planet (planetary forcing).',
     keyMetric: '>220,000 kcal/day/capita global high-tech frontier',
     shade: '#fff7ed',
   },
@@ -140,13 +140,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 13_800_000_000,
     displayDate: '13.80 Gya',
     domain: 'Astrophysics',
-    oneLiner: 'Spacetime expands; first 20 minutes freeze cosmic matter at ~75% hydrogen and ~25% helium.',
+    oneLiner: 'Space begins to expand. In the first 20 minutes, matter settles at about 75% hydrogen and 25% helium.',
     metrics: [
       { label: 'Uncertainty', value: '+/- 0.02 Gya' },
       { label: 'Recombination', value: '380 kyr (~3,000 K)' },
     ],
     deepNote:
-      'At 380,000 years post-singularity, electrons bound to protons and released the Cosmic Microwave Background (CMB). Population III stars later forged carbon through iron, while supernovae and neutron-star mergers synthesized heavier elements.',
+      'About 380,000 years in, the universe had cooled enough for electrons to join protons. The light set free then is still visible as the Cosmic Microwave Background (CMB). The first giant stars (Population III) later forged carbon up to iron, and supernovae and neutron-star collisions made the heavier elements.',
   },
   {
     id: 'milky-way',
@@ -155,13 +155,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 13_600_000_000,
     displayDate: '13.6 Gya',
     domain: 'Astrophysics',
-    oneLiner: 'Gravitational collapse builds the galactic halo and early stellar populations.',
+    oneLiner: 'Gravity pulls gas together into the halo of the galaxy and its first stars.',
     metrics: [
       { label: 'Formation Window', value: '13.6 - 13.2 Gya' },
       { label: 'Nucleosynthesis', value: 'Pop III -> Pop II' },
     ],
     deepNote:
-      'Successive generations of massive stars enriched the interstellar medium with heavy elements, creating the chemical inventory required for rocky planets and organic chemistry.',
+      'Each generation of massive stars left heavier elements in the gas between stars. Over time that built up the chemistry rocky planets and organic molecules need.',
   },
   {
     id: 'earth-accretion',
@@ -170,13 +170,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 4_540_000_000,
     displayDate: '4.54 Gya',
     domain: 'Geochemistry',
-    oneLiner: 'Planetesimal accretion forms Earth; oblique Theia impact (4.51 Gya) creates the Moon and 23.4 deg tilt.',
+    oneLiner: 'Small rocky bodies clump together into Earth. A glancing hit from another young planet, Theia (4.51 Gya), makes the Moon and the 23.4 degree tilt.',
     metrics: [
       { label: 'Axial Tilt', value: '23.4 deg' },
       { label: 'Oceans Stable', value: '4.4 Gya' },
     ],
     deepNote:
-      'A nearby supernova shockwave triggered solar-nebula collapse. The Moon stabilized Earth’s obliquity, anchoring predictable climate seasons across geological eras.',
+      'A shockwave from a nearby supernova set the gas cloud around the young Sun collapsing. Later the Moon steadied the tilt of Earth’s axis (its obliquity), which kept the seasons regular across geological time.',
   },
   {
     id: 'luca-abiogenesis',
@@ -185,13 +185,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 3_800_000_000,
     displayDate: '3.8 - 3.7 Gya',
     domain: 'Paleobiology',
-    oneLiner: 'Earliest carbon-12 life signatures; anaerobic prokaryotes synthesize ATP (the cell energy molecule) via proton gradients.',
+    oneLiner: 'The earliest chemical traces of life (extra carbon-12). Simple cells that need no oxygen make ATP, the cell energy molecule, by letting protons flow across a membrane.',
     metrics: [
       { label: 'Molecular Clock LUCA', value: '~4.2 Gya' },
       { label: 'Metabolism', value: 'Chemoautotrophic' },
     ],
     deepNote:
-      'Isotopic carbon-12 enrichment and microfossils in Archean greenstone belts and hydrothermal vents mark early life. Moody et al. (2024) molecular clocks place LUCA around 4.2 Gya.',
+      'Rocks rich in carbon-12 and tiny fossils in ancient Archean greenstone belts and deep-sea hot vents mark early life. Molecular clocks, which count genetic changes backwards (Moody et al., 2024), place LUCA around 4.2 Gya.',
   },
   {
     id: 'great-oxidation',
@@ -200,13 +200,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 2_400_000_000,
     displayDate: '2.4 - 2.1 Gya',
     domain: 'Geobiology',
-    oneLiner: 'Cyanobacterial oxygenic photosynthesis precipitates Banded Iron Formations and triggers Snowball Earth.',
+    oneLiner: 'Cyanobacteria start releasing oxygen through photosynthesis. Iron in the sea rusts out into banded rock layers, and Earth freezes over (Snowball Earth).',
     metrics: [
       { label: 'Mineral Sink', value: 'Fe2+ -> Fe3+ BIFs' },
       { label: 'Glaciation', value: '~300 Myr Huronian' },
     ],
     deepNote:
-      'Free O2 from Photosystems I and II saturated oceanic iron sinks, then oxidized atmospheric methane (CH4), collapsing the greenhouse effect and causing mass anaerobic extinction while unlocking aerobic metabolism.',
+      'Oxygen from photosynthesis (Photosystems I and II) was first soaked up by iron dissolved in the oceans. Once that iron was used up, oxygen broke down the methane (CH4) in the air. The greenhouse effect collapsed, most life that could not handle oxygen died out, and breathing oxygen (aerobic metabolism) became possible.',
   },
   {
     id: 'eukaryogenesis',
@@ -215,13 +215,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 1_800_000_000,
     displayDate: '1.8 - 1.5 Gya',
     domain: 'Cell Biology',
-    oneLiner: 'An Asgard archaeal host retains an aerobic bacterium, multiplying ATP per gene by 100,000x.',
+    oneLiner: 'A host cell from the Asgard archaea keeps an oxygen-burning bacterium inside it. Energy (ATP) per gene jumps about 100,000x.',
     metrics: [
       { label: 'Bioenergetic Gain', value: '100,000x ATP/gene' },
       { label: 'Multicellularity', value: '1.0 - 0.8 Gya' },
     ],
     deepNote:
-      'Endosymbiotic mitochondria broke the surface-area-to-volume energy bottleneck of prokaryotes, enabling large eukaryotic genomes, colonial multicellularity (1.0 Gya), and Ediacaran soft-bodied fauna (635-538.8 Mya).',
+      'Simple cells hit an energy ceiling, because they make energy only at their surface and surface grows slower than volume. Mitochondria inside the cell removed that limit. That made room for large genomes, then colonies of cells (1.0 Gya), then the soft-bodied Ediacaran animals (635 to 538.8 Mya).',
   },
   {
     id: 'cambrian-explosion',
@@ -230,13 +230,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 538_800_000,
     displayDate: '538.8 Mya',
     domain: 'Evolutionary Biology',
-    oneLiner: 'Modern bilaterian phyla, eyes, hard shells, and active predation radiate within 20 million years.',
+    oneLiner: 'Most modern animal groups (the bilaterian phyla), with eyes, hard shells and active hunting, appear within about 20 million years.',
     metrics: [
       { label: 'Radiation Window', value: '~20 Myr' },
       { label: 'Land Plants', value: '475 Mya (O3 shield)' },
     ],
     deepNote:
-      'Rising ocean oxygenation and predator-prey arms races drove rapid body-plan diversification (Arthropoda, Mollusca, Chordata / Pikaia). Ozone shielding later enabled terrestrial plants (475 Mya) and tetrapods like Tiktaalik (375 Mya).',
+      'More oxygen in the oceans and an arms race between predators and prey drove fast change in body plans: arthropods, molluscs and early chordates such as Pikaia. Later the ozone layer shielded the land, so plants (475 Mya) and four-legged animals such as Tiktaalik (375 Mya) could move onto it.',
   },
   {
     id: 'amniotes-great-dying',
@@ -245,13 +245,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 252_000_000,
     displayDate: '320 - 252 Mya',
     domain: 'Paleontology',
-    oneLiner: 'Amniotes conquer dry land (320 Mya); Siberian Traps volcanism later wipes out 95% of marine species.',
+    oneLiner: 'The amniote egg lets animals live on dry land (320 Mya). Later, the Siberian Traps volcanoes wipe out 95% of sea species.',
     metrics: [
       { label: 'Carboniferous O2', value: '~35% atm' },
       { label: 'Great Dying Loss', value: '95% marine / 70% land' },
     ],
     deepNote:
-      'The amniotic egg freed vertebrates from aquatic reproduction during high-oxygen coal-forest eras. At 252 Mya, flood basalt volcanism and ocean acidification cleared ecological niches for early dinosaurs and mammals (~225 Mya).',
+      'The amniotic egg carried its own water, so vertebrates no longer had to breed in water. This happened in the high-oxygen coal-forest era. At 252 Mya, huge lava floods and acidifying oceans emptied many niches, which early dinosaurs and mammals later filled (~225 Mya).',
   },
   {
     id: 'kpg-extinction',
@@ -260,13 +260,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 66_000_000,
     displayDate: '66.0 Mya',
     domain: 'Planetary Science',
-    oneLiner: 'A 10 km Chicxulub impact ends non-avian dinosaurs, opening arboreal niches for primates.',
+    oneLiner: 'A 10 km asteroid hits Chicxulub and ends the non-bird dinosaurs, leaving the trees open for primates.',
     metrics: [
       { label: 'Species Lost', value: '~75% terrestrial' },
       { label: 'Euprimates', value: '~56 Mya' },
     ],
     deepNote:
-      'Multi-year impact winter collapsed photosynthetic food chains. Surviving mammals radiated rapidly; true primates evolved stereoscopic vision and grasping hands, with apes diverging from Old World monkeys around 25-20 Mya.',
+      'Years of impact winter blocked sunlight and broke the food chains that start with photosynthesis. Surviving mammals spread fast. True primates evolved depth vision and grasping hands, and apes split from Old World monkeys around 25 to 20 Mya.',
   },
   {
     id: 'hominin-bipedalism',
@@ -275,13 +275,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 4_000_000,
     displayDate: '7 - 4.0 Mya',
     domain: 'Paleoanthropology',
-    oneLiner: 'Homo-Pan lineages split (7-6 Mya); Australopithecus afarensis walks upright with a 400 cc brain.',
+    oneLiner: 'The human and chimpanzee lines split (7 to 6 Mya). Australopithecus afarensis walks upright with a 400 cc brain.',
     metrics: [
       { label: 'Brain Volume', value: '380 - 450 cc' },
       { label: 'Key Finding', value: 'Bipedalism precedes big brains' },
     ],
     deepNote:
-      'East African drying expanded savannahs. Fossil AL 288-1 ("Lucy") shows valgus knees and arched feet millions of years before major cranial expansion.',
+      'As East Africa dried out, savannah spread. The fossil AL 288-1 ("Lucy") has inward-angled (valgus) knees and arched feet, millions of years before brains grew much bigger.',
     brainCc: 410,
     energyKcal: 2400,
   },
@@ -292,13 +292,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 1_800_000,
     displayDate: '1.9 - 1.8 Mya',
     domain: 'Bioenergetics',
-    oneLiner: 'Controlled fire and thermal pre-digestion shrink the gut and unlock a 900-1,100 cc brain.',
+    oneLiner: 'Controlled fire and cooking, which does part of the digesting outside the body, shrink the gut and make room for a 900 to 1,100 cc brain.',
     metrics: [
       { label: 'Brain Volume', value: '900 - 1,100 cc' },
       { label: 'Egg Protein Digest.', value: '~51% raw -> ~91% cooked' },
     ],
     deepNote:
-      'Following Homo habilis (2.4 Mya, 600 cc, Mode 1 Oldowan tools), Homo erectus paired Acheulean handaxes with persistence hunting and cooking (Wrangham hypothesis; unambiguous hearths ~1.0-0.8 Mya). By the Aiello-Wheeler Expensive Tissue Hypothesis, shrinking the metabolically costly gut financed neural expansion.',
+      'After Homo habilis (2.4 Mya, 600 cc, simple Mode 1 Oldowan stone tools), Homo erectus combined Acheulean handaxes with persistence hunting (running prey down over long distances) and cooking. That is the Wrangham hypothesis, and clear hearths show up around 1.0 to 0.8 Mya. The Expensive Tissue Hypothesis (Aiello and Wheeler) explains the trade-off: the gut burns a lot of energy, so a smaller gut freed energy to pay for a bigger brain.',
     brainCc: 1000,
     energyKcal: 3400,
   },
@@ -309,13 +309,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 70_000,
     displayDate: '300 - 70 kya',
     domain: 'Anthropology',
-    oneLiner: 'Anatomically modern humans (300 kya, 1,350 cc) cross a symbolic threshold to scale beyond Dunbar’s 150.',
+    oneLiner: 'Modern humans (300 kya, 1,350 cc) start using symbols and shared stories, so groups can grow past Dunbar’s number of about 150.',
     metrics: [
-      { label: 'Brain RMR Share', value: '20 - 25% (2% mass)' },
+      { label: 'Brain share of resting energy (RMR)', value: '20 - 25% (2% mass)' },
       { label: 'Dunbar Threshold', value: '~150 -> thousands' },
     ],
     deepNote:
-      'Recursive language and shared imagined realities enabled flexible mass cooperation, global dispersal (Australia ~65-50 kya, Europe ~45 kya, 1.5-2.5% Neanderthal DNA), and megafaunal extinctions.',
+      'Language that can nest one idea inside another, plus shared imagined realities, let large numbers of strangers cooperate. Humans spread across the world (Australia ~65 to 50 kya, Europe ~45 kya), carrying 1.5 to 2.5% Neanderthal DNA, and many large animals went extinct.',
     brainCc: 1350,
     energyKcal: 4000,
   },
@@ -326,13 +326,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 12_000,
     displayDate: '12 kya (10,000 BCE)',
     domain: 'Archaeology',
-    oneLiner: 'Holocene stabilization enables grain domestication, raising carrying capacity 10-100x at a health cost.',
+    oneLiner: 'A stable post-Ice Age climate (the Holocene) lets people farm grain. The same land feeds 10 to 100x more people, at a cost to health.',
     metrics: [
       { label: 'Density Shift', value: '<1 -> >50 people/km2' },
       { label: 'Holocene Onset', value: '~11,700 ya' },
     ],
     deepNote:
-      'Independent domestication in the Fertile Crescent (wheat, barley), China (rice, millet), and the Americas (maize, potatoes) created storable surpluses, alongside reduced stature, dental caries, and livestock zoonoses.',
+      'Farming started separately in the Fertile Crescent (wheat, barley), China (rice, millet) and the Americas (maize, potatoes), and gave people food they could store. The cost was shorter bodies, tooth decay and diseases caught from livestock (zoonoses).',
     energyKcal: 10000,
   },
   {
@@ -342,13 +342,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 5_526,
     displayDate: '3500 - 1900 BCE',
     domain: 'Ancient History',
-    oneLiner: 'Grain surpluses finance writing (cuneiform 3400 BCE), irrigation bureaucracies, and planned cities.',
+    oneLiner: 'Grain surpluses pay for writing (cuneiform, 3400 BCE), officials to run the irrigation, and planned cities.',
     metrics: [
       { label: 'Sumer Base', value: 'Sexagesimal (Base-60)' },
       { label: 'Harappa Bricks', value: '1:2:4 standardized ratio' },
     ],
     deepNote:
-      'Sumerian clay tokens evolved into cuneiform accounting; Egypt unified under Narmer (3100 BCE) on predictable Nile silt without Mesopotamian salinization; Mature Harappa (2600-1900 BCE) built municipal covered drainage and grid cities.',
+      'In Sumer, clay counting tokens turned into cuneiform bookkeeping. Egypt unified under Narmer (3100 BCE), fed by the regular Nile silt and spared the salty soils that hurt Mesopotamia. Mature Harappa (2600 to 1900 BCE) built covered town drains and grid-planned cities.',
     energyKcal: 22000,
   },
   {
@@ -358,13 +358,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 3_226,
     displayDate: '1200 - 1150 BCE',
     domain: 'Systems History',
-    oneLiner: 'Cascading drought, tin-copper trade failure, revolts, and Sea Peoples collapse Eastern Mediterranean states.',
+    oneLiner: 'Drought, broken tin and copper trade, revolts and the Sea Peoples bring down the states of the Eastern Mediterranean one after another.',
     metrics: [
       { label: 'Collapse Span', value: '~50 years' },
       { label: 'Tech Shift', value: 'Bronze -> local Iron' },
     ],
     deepNote:
-      'Tightly coupled palace economies (Mycenae, Hittites, Ugarit) failed synchronously when long-distance tin-copper networks broke. Ubiquitous local iron ore decentralized post-collapse metallurgy.',
+      'Palace economies such as Mycenae, the Hittites and Ugarit depended on each other, so they failed together when the long-distance tin and copper routes broke. Iron ore, by contrast, was found almost everywhere, so metalworking after the collapse became local.',
     energyKcal: 18000,
   },
   {
@@ -374,13 +374,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 2_425,
     displayDate: '508 - 399 BCE',
     domain: 'Political Philosophy',
-    oneLiner: 'Open inquiry (elenchus) and direct democracy contrast with Spartan stasis; Socrates executed in 399 BCE.',
+    oneLiner: 'Open questioning (the Socratic method, elenchus) and direct democracy, as compared to unchanging Sparta. Socrates is executed in 399 BCE.',
     metrics: [
       { label: 'Jury Size', value: '501 citizens' },
       { label: 'Lineage', value: 'Socrates -> Plato -> Aristotle' },
     ],
     deepNote:
-      'Following the Peloponnesian War and the Thirty Tyrants (404-403 BCE), restored Athenian democracy charged Socrates with impiety and corrupting youth. Plato’s preservation of his method separated doxa (opinion) from episteme (knowledge).',
+      'After the Peloponnesian War and the Thirty Tyrants (404 to 403 BCE), the restored democracy charged Socrates with impiety and corrupting the young. Plato kept his method alive, and with it the line between opinion (doxa) and knowledge (episteme).',
     energyKcal: 31000,
   },
   {
@@ -390,13 +390,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 483, // 1543 CE
     displayDate: '1492 - 1687 CE',
     domain: 'History of Science',
-    oneLiner: 'Global ecological transfer meets mathematical heliocentrism, anatomy, and Newtonian mechanics.',
+    oneLiner: 'Crops, animals and diseases cross the oceans, while maths puts the Sun at the centre, anatomy is redrawn and Newton writes down the laws of motion.',
     metrics: [
       { label: 'Principia', value: '1687 CE (Newton)' },
       { label: 'Motto', value: 'Nullius in verba' },
     ],
     deepNote:
-      'Copernicus and Vesalius (1543), Harvey (1628), and Newton (1687) broke Aristotelian cosmology via empirical verification and calculus, while Enlightenment thinkers (Locke, Voltaire) codified natural rights and reason.',
+      'Copernicus and Vesalius (1543), Harvey (1628) and Newton (1687) replaced the cosmos of Aristotle with measurement and calculus. Enlightenment thinkers such as Locke and Voltaire then wrote natural rights and reason into political thought.',
     energyKcal: 38000,
   },
   {
@@ -406,29 +406,29 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 186, // ~1840 CE
     displayDate: '1750 - 1914 CE',
     domain: 'Energy & Industry',
-    oneLiner: 'Coal, steam engines, Maxwell’s electromagnetism, and factory assembly lines break organic energy ceilings.',
+    oneLiner: 'Coal, steam engines, Maxwell’s electromagnetism and factory lines break the energy ceiling set by muscle, wood and wind.',
     metrics: [
       { label: 'Energy Capture', value: '75k - 110k kcal/day' },
       { label: 'Key Laws', value: 'Thermodynamics & EM' },
     ],
     deepNote:
-      'Replacing muscle and biomass with fossil fuels multiplied per-capita power by an order of magnitude, while generating urban pollution, imperial asymmetries, and technological lock-in.',
+      'Swapping muscle and wood for fossil fuels gave each person about 10 times more power. It also brought city smog, lopsided empires and technologies that were hard to move away from (lock-in).',
     energyKcal: 92000,
   },
   {
     id: 'big-science-ww2',
-    title: 'Big Science & Post-1945 Geopolitical Reordering',
+    title: 'Big Science & the Post-1945 World Order',
     epoch: 'industrial',
     yearsAgo: 81, // 1945 CE
     displayDate: '1939 - 1945 CE',
     domain: 'Geopolitics & Physics',
-    oneLiner: 'Controlled nuclear fission (1942) and WWII shift the world from multipolar empires to bipolar deterrence.',
+    oneLiner: 'The first controlled nuclear chain reaction (1942) and World War II turn a world of several empires into two superpowers held apart by nuclear deterrence.',
     metrics: [
       { label: 'Chicago Pile-1', value: '1942 CE' },
       { label: 'Order Shift', value: 'Multipolar -> Bipolar' },
     ],
     deepNote:
-      'State-capitalized multi-site research (Manhattan Project) fused physics with national security, while Bretton Woods and nuclear deterrence redefined global institutions.',
+      'Government money paid for research across many sites at once (the Manhattan Project), which tied physics to national security. Bretton Woods and nuclear deterrence then reshaped the institutions that run the world.',
     energyKcal: 135000,
   },
   {
@@ -438,13 +438,13 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 14, // 2012 CE anchor for modern cluster
     displayDate: '1953 - 2026 CE',
     domain: 'Information & Biosphere',
-    oneLiner: 'Molecular genetics, global computation, and algorithmic markets turn humanity into a planetary geological force.',
+    oneLiner: 'Genetics, worldwide computing and algorithm-driven markets make humanity a force that changes the geology of the planet.',
     metrics: [
       { label: 'Energy Frontier', value: '~230,000 kcal/day/cap' },
-      { label: 'Market Latency', value: 'Coffeehouse -> HFT servers' },
+      { label: 'Market Latency', value: 'Coffeehouse -> high-frequency trading servers' },
     ],
     deepNote:
-      'From DNA (1953) and ARPANET/Apollo 11 (1969) to the Human Genome Project (1990-2003) and CRISPR-Cas9 (2012), information theory and synthetic biology now co-evolve with planetary climate constraints.',
+      'From DNA (1953) and ARPANET and Apollo 11 (1969) to the Human Genome Project (1990 to 2003) and CRISPR-Cas9 (2012), information theory and engineered (synthetic) biology now grow up against the limits of the climate of the planet.',
     energyKcal: 230000,
   },
 ];
@@ -455,18 +455,18 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     yearLabel: '585 BCE',
     yearsAgo: 2611,
     figure: 'Thales of Miletus',
-    breakthrough: 'Naturalistic eclipse prediction & material substrate',
+    breakthrough: 'Predicted an eclipse from nature, and asked what everything is made of',
     kind: 'episteme',
-    paradigmNote: 'Shifted explanation from mythic agency toward natural regularities.',
+    paradigmNote: 'Moved explanation away from the gods and towards regular patterns in nature.',
   },
   {
     id: 'sci-aristotle',
     yearLabel: '335 BCE',
     yearsAgo: 2361,
     figure: 'Aristotle',
-    breakthrough: 'Lyceum founded; formal logic & empirical taxonomy',
+    breakthrough: 'Founded the Lyceum, with formal logic and careful sorting of living things',
     kind: 'episteme',
-    paradigmNote: 'Systematized biology and geocentric physics that dominated for 1,800 years.',
+    paradigmNote: 'Organised biology and an Earth-centred physics that held for 1,800 years.',
   },
   {
     id: 'sci-eratosthenes',
@@ -475,16 +475,16 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'Eratosthenes',
     breakthrough: 'Measured Earth’s circumference via solar shadows',
     kind: 'synthesis',
-    paradigmNote: 'Combined geometry with empirical measurement across Alexandria and Syene.',
+    paradigmNote: 'Compared shadows at Alexandria and Syene, then used geometry to turn the difference into the size of Earth.',
   },
   {
     id: 'sci-khwarizmi',
     yearLabel: '820 CE',
     yearsAgo: 1206,
     figure: 'Al-Khwarizmi',
-    breakthrough: 'Kitab al-jabr: formal foundation of algebra',
+    breakthrough: 'Kitab al-jabr: the formal start of algebra',
     kind: 'episteme',
-    paradigmNote: 'Emergent product of the Abbasid Translation Movement synthesizing Greek and Indian math.',
+    paradigmNote: 'Came out of the Abbasid Translation Movement, which joined Greek and Indian maths.',
   },
   {
     id: 'sci-bisheng',
@@ -493,16 +493,16 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'Bi Sheng',
     breakthrough: 'Ceramic movable-type printing in Song China',
     kind: 'techne',
-    paradigmNote: 'Applied reproduction technology that lowered the cost of transmitting knowledge.',
+    paradigmNote: 'Made copying cheaper, so knowledge spread for less.',
   },
   {
     id: 'sci-copernicus',
     yearLabel: '1543 CE',
     yearsAgo: 483,
     figure: 'Copernicus & Vesalius',
-    breakthrough: 'Heliocentric astronomy & direct human anatomy',
+    breakthrough: 'Sun-centred astronomy, and anatomy from direct dissection',
     kind: 'episteme',
-    paradigmNote: 'Replaced Ptolemaic geocentrism and Galenic dogma with direct mathematical and anatomical evidence.',
+    paradigmNote: 'Replaced the Earth-centred model of Ptolemy and the textbook claims of Galen with maths and direct evidence from the body.',
   },
   {
     id: 'sci-harvey',
@@ -511,7 +511,7 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'William Harvey',
     breakthrough: 'Closed circulatory system of blood (De motu cordis)',
     kind: 'episteme',
-    paradigmNote: 'Applied quantitative flow reasoning to physiology, undermining the old four-humours theory of the body.',
+    paradigmNote: 'Measured how much blood the heart moves, which undercut the old four-humours theory of the body.',
   },
   {
     id: 'sci-newton',
@@ -520,25 +520,25 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'Isaac Newton',
     breakthrough: 'Principia Mathematica: universal gravitation & calculus',
     kind: 'synthesis',
-    paradigmNote: 'Unified terrestrial and celestial mechanics under single mathematical laws.',
+    paradigmNote: 'Showed that the same mathematical laws move objects on Earth and planets in the sky.',
   },
   {
     id: 'sci-lavoisier',
     yearLabel: '1789 CE',
     yearsAgo: 237,
     figure: 'Antoine Lavoisier',
-    breakthrough: 'Quantitative chemistry & oxygen combustion theory',
+    breakthrough: 'Chemistry by measurement, and oxygen as the key to burning',
     kind: 'episteme',
-    paradigmNote: 'Replaced phlogiston theory with mass conservation and precise instrumentation.',
+    paradigmNote: 'Replaced phlogiston theory with conservation of mass and careful weighing.',
   },
   {
     id: 'sci-lyell',
     yearLabel: '1833 CE',
     yearsAgo: 193,
     figure: 'Charles Lyell',
-    breakthrough: 'Uniformitarianism & geological deep time',
+    breakthrough: 'Uniformitarianism: slow change over deep geological time',
     kind: 'episteme',
-    paradigmNote: 'Established slow, continuous geological processes over vast time horizons.',
+    paradigmNote: 'Showed that slow, ongoing processes, given enough time, shape the Earth.',
   },
   {
     id: 'sci-darwin',
@@ -547,7 +547,7 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'Charles Darwin',
     breakthrough: 'On the Origin of Species: natural selection',
     kind: 'episteme',
-    paradigmNote: 'Unified biological diversity via descent with modification across deep time.',
+    paradigmNote: 'Explained the variety of life as descent with modification over deep time.',
   },
   {
     id: 'sci-maxwell-mendel',
@@ -556,7 +556,7 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'Maxwell & Mendel',
     breakthrough: 'Electromagnetic wave equations & laws of genetics',
     kind: 'synthesis',
-    paradigmNote: 'Laid simultaneous foundations for power grids/radio and the Modern Synthesis.',
+    paradigmNote: 'Laid the base for power grids and radio on one side, and for modern genetics (the Modern Synthesis) on the other.',
   },
   {
     id: 'sci-curie-roentgen',
@@ -565,7 +565,7 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'Roentgen & M./P. Curie',
     breakthrough: 'X-rays & radioactivity (polonium, radium)',
     kind: 'techne',
-    paradigmNote: 'New diagnostic instruments revealed subatomic instability and launched modern physics.',
+    paradigmNote: 'New instruments showed that atoms can break apart, which started modern physics.',
   },
   {
     id: 'sci-einstein',
@@ -574,7 +574,7 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'Albert Einstein',
     breakthrough: 'Special & General Relativity (spacetime curvature)',
     kind: 'episteme',
-    paradigmNote: 'Reframed gravity, light speed, and cosmic geometry, enabling Big Bang cosmology.',
+    paradigmNote: 'Changed how we understand gravity, the speed of light and the shape of the universe, which made Big Bang cosmology possible.',
   },
   {
     id: 'sci-fermi',
@@ -583,7 +583,7 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'Enrico Fermi et al.',
     breakthrough: 'Chicago Pile-1: controlled nuclear chain reaction',
     kind: 'techne',
-    paradigmNote: 'Inaugurated industrial-scale Big Science and nuclear energy/deterrence.',
+    paradigmNote: 'Started industrial-scale Big Science, nuclear power and nuclear deterrence.',
   },
   {
     id: 'sci-dna',
@@ -592,7 +592,7 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'Franklin, Watson, Crick, Wilkins',
     breakthrough: 'Double-helix structure of DNA',
     kind: 'synthesis',
-    paradigmNote: 'X-ray crystallography revealed the molecular code behind the central dogma of genetics.',
+    paradigmNote: 'X-ray crystallography showed the molecule behind the central dogma of genetics (DNA to RNA to protein).',
   },
   {
     id: 'sci-arpanet',
@@ -601,7 +601,7 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'ARPANET & Apollo 11',
     breakthrough: 'Packet-switched networking & crewed lunar landing',
     kind: 'techne',
-    paradigmNote: 'Cold War state patronage forged global digital networking and orbital infrastructure.',
+    paradigmNote: 'Cold War government money built global computer networks and the first space infrastructure.',
   },
   {
     id: 'sci-hgp',
@@ -610,7 +610,7 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'Human Genome Project',
     breakthrough: 'Complete sequencing of the human genome',
     kind: 'synthesis',
-    paradigmNote: 'Public-private Big Science merged molecular biology with high-throughput computation.',
+    paradigmNote: 'A public and private Big Science project that joined molecular biology with large-scale computing.',
   },
   {
     id: 'sci-crispr',
@@ -619,7 +619,7 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'Doudna, Charpentier et al.',
     breakthrough: 'CRISPR-Cas9 programmable gene editing',
     kind: 'techne',
-    paradigmNote: 'Adapted bacterial immunity into precision biological engineering.',
+    paradigmNote: 'Turned a bacterial immune system into a precise tool for editing genes.',
   },
 ];
 

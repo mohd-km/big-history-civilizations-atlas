@@ -21,7 +21,7 @@ export default function HistoryModule() {
       <hr className="mod-divider" />
       <div className="mod-head">
         <h2>energy capture & resilience</h2>
-        <p>Energy per person sets how dense and large a society can grow; openness and shocks decide whether it lasts.</p>
+        <p>Energy per person sets how large and crowded a society can get. Openness and shocks decide whether it lasts.</p>
       </div>
       <CivilizationComparator params={simParams} onChangeParams={setSimParams} simulation={simulation} />
       <div className="mod-exports" aria-label="Export data">

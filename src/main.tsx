@@ -23,12 +23,12 @@ const config: ShellConfig = {
         how:
           'The timeline uses a log scale: each step on the axis is 10 times further back in time, so billions of years and the last century fit on one screen. Below it, a simple model shows how energy per person, openness and shocks decide whether a society grows or collapses.',
         tryThis:
-          'Press the "Industrial" button to zoom into the industrial era (1750 to 1950). On a straight timeline those 200 years would be 0.0000014% of the width; on this axis they already take up over 5% of the full view.',
+          'Press the "Industrial" button to zoom into the industrial era (1750 to 1950). On a straight timeline those 200 years would be 0.0000014% of the width. On this axis they already take up over 5% of the full view.',
         terms: [
           ['Gya / Mya / kya', 'billion / million / thousand years ago'],
-          ['10^6 y', 'a million years ago; each tick is 10 times further back than the one to its right'],
+          ['10^6 y', 'a million years ago. Each tick is 10 times further back than the one to its right'],
           ['Energy capture', 'food plus fuel energy used per person per day, in kilocalories (kcal)'],
-          ['Resilience score', 'a 0 to 100 estimate from this model of how well a society absorbs shocks; higher is sturdier'],
+          ['Resilience score', 'a 0 to 100 estimate from this model of how well a society absorbs shocks, where higher is sturdier'],
         ],
       },
       component: DefaultTab,

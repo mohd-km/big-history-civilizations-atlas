@@ -74,7 +74,7 @@ export const CIVILIZATION_PRESETS: CivilizationPreset[] = [
     complexityOverhead: 26,
     governanceArchetype: 'Sedentary delayed-return kinship village',
     energySource: 'Monoculture grains + draft animals',
-    primaryCollapseDriver: 'Harvest failure & livestock zoonotic epidemics',
+    primaryCollapseDriver: 'Harvest failure & epidemics caught from livestock',
     historicalAnchor: '10-100x carrying capacity over foraging, traded against anemia, caries, and endemic disease.',
   },
   {
@@ -136,7 +136,7 @@ export const CIVILIZATION_PRESETS: CivilizationPreset[] = [
     resourceShockExposure: 58,
     supplyCouplingFragility: 72,
     complexityOverhead: 70,
-    governanceArchetype: 'Mass-bureaucratic nation-state (Weberian + Fordist)',
+    governanceArchetype: 'Mass-bureaucratic nation-state (rule-bound civil service + factory mass production)',
     energySource: 'Coal, oil, steam turbines, electrical grids',
     primaryCollapseDriver: 'Total war, fossil-fuel lock-in & industrial pollution',
     historicalAnchor: 'Broke organic energy limits via thermodynamics and electromagnetism; reordered globally after 1945.',

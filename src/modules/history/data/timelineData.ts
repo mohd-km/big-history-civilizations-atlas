@@ -78,8 +78,8 @@ export const EPOCHS: EpochDefinition[] = [
     endYa: 538_800_000,
     logMin: Math.log10(538_800_000),
     logMax: Math.log10(4_540_000_000),
-    summary: 'Planetary accretion, liquid oceans, LUCA abiogenesis, Great Oxidation, and mitochondrial endosymbiosis.',
-    keyMetric: '100,000x ATP energy per gene via mitochondria',
+    summary: 'Planetary accretion, liquid oceans, LUCA (last universal common ancestor) and the origin of life, Great Oxidation, and mitochondrial endosymbiosis.',
+    keyMetric: '100,000x ATP (cell energy) per gene via mitochondria',
     shade: '#f7f5f0',
   },
   {
@@ -114,7 +114,7 @@ export const EPOCHS: EpochDefinition[] = [
     endYa: 76, // 1950 CE
     logMin: Math.log10(76),
     logMax: Math.log10(276),
-    summary: 'Fossil-fuel thermodynamics, electromagnetism, Fordist mass production, and state-funded Big Science.',
+    summary: 'Fossil-fuel thermodynamics, electromagnetism, assembly-line mass production, and state-funded Big Science.',
     keyMetric: '75,000 to 110,000 kcal/day/capita energy capture',
     shade: '#f8f4f0',
   },
@@ -185,7 +185,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 3_800_000_000,
     displayDate: '3.8 - 3.7 Gya',
     domain: 'Paleobiology',
-    oneLiner: 'Earliest carbon-12 life signatures; anaerobic prokaryotes synthesize ATP via proton gradients.',
+    oneLiner: 'Earliest carbon-12 life signatures; anaerobic prokaryotes synthesize ATP (the cell's energy molecule) via proton gradients.',
     metrics: [
       { label: 'Molecular Clock LUCA', value: '~4.2 Gya' },
       { label: 'Metabolism', value: 'Chemoautotrophic' },
@@ -406,7 +406,7 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
     yearsAgo: 186, // ~1840 CE
     displayDate: '1750 - 1914 CE',
     domain: 'Energy & Industry',
-    oneLiner: 'Coal, steam engines, Maxwell’s electromagnetism, and Fordist assembly lines break organic energy ceilings.',
+    oneLiner: 'Coal, steam engines, Maxwell’s electromagnetism, and factory assembly lines break organic energy ceilings.',
     metrics: [
       { label: 'Energy Capture', value: '75k - 110k kcal/day' },
       { label: 'Key Laws', value: 'Thermodynamics & EM' },
@@ -511,7 +511,7 @@ export const SCIENCE_MILESTONES: ScienceMilestone[] = [
     figure: 'William Harvey',
     breakthrough: 'Closed circulatory system of blood (De motu cordis)',
     kind: 'episteme',
-    paradigmNote: 'Applied quantitative flow reasoning to physiology, undermining humoralism.',
+    paradigmNote: 'Applied quantitative flow reasoning to physiology, undermining the old four-humours theory of the body.',
   },
   {
     id: 'sci-newton',
